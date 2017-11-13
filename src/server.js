@@ -34,7 +34,7 @@ export default ({onError, CsrfProtection}) => {
       const script = html`
 <script nonce="${ctx.nonce}">
 onerror = function(m,s,l,c,e) {
-  if (e.__handled) return;
+  if (!e || e.__handled) return;
   var error = {};
   Object.getOwnPropertyNames(e).forEach(function(key) {
     error[key] = e[key];
