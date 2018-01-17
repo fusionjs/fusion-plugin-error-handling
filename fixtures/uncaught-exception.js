@@ -1,5 +1,5 @@
 /* eslint-env node */
-const Plugin = require('../dist/index.es.js');
+const Plugin = require('../dist/index.js');
 
 const onError = e => {
   console.log('ERROR HANDLER', e); // eslint-disable-line
