@@ -52,7 +52,7 @@ onerror = function(m,s,l,c,e) {
   _e.__handled = true;
 };
 </script>`;
-        ctx.body.head.unshift(script);
+        ctx.template.head.unshift(script);
       } else if (ctx.path === ctx.prefix + '/_errors') {
         await parseBody(ctx, () => Promise.resolve());
         await onError(ctx.request.body, captureTypes.browser);
