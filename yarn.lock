@@ -3762,8 +3762,8 @@ functional-red-black-tree@^1.0.1:
   resolved "https://registry.yarnpkg.com/functional-red-black-tree/-/functional-red-black-tree-1.0.1.tgz#1b0ab3bd553b2a0d6399d29c0e3ea0b252078327"
 
 fusion-cli@^0.2.0:
-  version "0.2.7"
-  resolved "https://registry.yarnpkg.com/fusion-cli/-/fusion-cli-0.2.7.tgz#d08daddaaf9e0d829d9936f9e88f6332dcb0a65d"
+  version "0.2.9"
+  resolved "https://registry.yarnpkg.com/fusion-cli/-/fusion-cli-0.2.9.tgz#1b842429d983466a61b99269f7ad2fd553ebb597"
   dependencies:
     "@nadiia/file-loader" "^1.0.0-beta.5"
     babel-core "^6.26.0"
@@ -3841,9 +3841,9 @@ fusion-cli@^0.2.0:
     winston "^2.4.0"
     yargs "^10.0.3"
 
-fusion-core@0.3.0-4:
-  version "0.3.0-4"
-  resolved "https://registry.yarnpkg.com/fusion-core/-/fusion-core-0.3.0-4.tgz#d6d22d99ccaa320cfd16897519ec991a42496d04"
+fusion-core@0.3.0-5:
+  version "0.3.0-5"
+  resolved "https://registry.yarnpkg.com/fusion-core/-/fusion-core-0.3.0-5.tgz#b6ad6ea3f7dcdb6517dc31214f64856727c5800c"
   dependencies:
     koa "^2.3.0"
     koa-compose "^4.0.0"
@@ -5212,8 +5212,8 @@ jsbn@~0.1.0:
   resolved "https://registry.yarnpkg.com/jsbn/-/jsbn-0.1.1.tgz#a5e654c2e5a2deb5f201d96cefbca80c0ef2f513"
 
 jsdom@^11.5.1:
-  version "11.6.0"
-  resolved "https://registry.yarnpkg.com/jsdom/-/jsdom-11.6.0.tgz#7334781595ee8bdeea9742fc33fab5cdad6d195f"
+  version "11.6.1"
+  resolved "https://registry.yarnpkg.com/jsdom/-/jsdom-11.6.1.tgz#43fffc10072597a8ee9680cba46900d9e4dbeba2"
   dependencies:
     abab "^1.0.4"
     acorn "^5.3.0"
@@ -8159,8 +8159,8 @@ timed-out@4.0.1, timed-out@^4.0.0:
   resolved "https://registry.yarnpkg.com/timed-out/-/timed-out-4.0.1.tgz#f32eacac5a175bea25d7fab565ab3ed8741ef56f"
 
 timers-browserify@^2.0.4:
-  version "2.0.5"
-  resolved "https://registry.yarnpkg.com/timers-browserify/-/timers-browserify-2.0.5.tgz#04878fb12a155a159c9d1e59faa1f77bf4ecc44c"
+  version "2.0.6"
+  resolved "https://registry.yarnpkg.com/timers-browserify/-/timers-browserify-2.0.6.tgz#241e76927d9ca05f4d959819022f5b3664b64bae"
   dependencies:
     setimmediate "^1.0.4"
 
