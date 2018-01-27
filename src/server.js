@@ -19,7 +19,7 @@ const captureTypes = {
 
 export const ErrorHandlerToken = createToken('ErrorHandlerToken');
 
-export default createPlugin({
+export default __NODE__ && createPlugin({
   deps: {onError: ErrorHandlerToken},
   provides({onError}) {
     assert(typeof onError === 'function', '{onError} must be a function');

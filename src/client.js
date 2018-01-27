@@ -13,7 +13,7 @@ export const ErrorHandlingEmitterToken = createToken(
   'ErrorHandlingEmitterToken'
 );
 
-export default createPlugin({
+export default __BROWSER__ && createPlugin({
   deps: {emit: ErrorHandlingEmitterToken},
   provides: ({emit}) => {
     const _emit =
