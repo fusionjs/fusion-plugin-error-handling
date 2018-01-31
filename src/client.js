@@ -18,11 +18,18 @@ export default __BROWSER__ &&
   createPlugin({
     deps: {emit: ErrorHandlingEmitterToken},
     provides: ({emit}) => {
-      const _emit =
-        (typeof emit === 'function' && emit) ||
+      let _emit =
+        emit ||
         ((e, src) => {
           if (window.onerror) window.onerror(e.message, src, null, null, e);
         });
+      if (__DEV__) {
+        let oldEmit = _emit;
+        _emit = (e, src) => {
+          oldEmit(e, src);
+          throw e;
+        };
+      }
       for (const key in window) {
         if (
           key.match(/webkit/) == null && // stop deprecation warnings
