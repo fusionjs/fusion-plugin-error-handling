@@ -7,10 +7,11 @@
 /* eslint-env browser */
 
 import {createPlugin} from 'fusion-core';
-import {createToken} from 'fusion-tokens';
+import {createOptionalToken} from 'fusion-tokens';
 
-export const ErrorHandlingEmitterToken = createToken(
-  'ErrorHandlingEmitterToken'
+export const ErrorHandlingEmitterToken = createOptionalToken(
+  'ErrorHandlingEmitterToken',
+  null
 );
 
 export default __BROWSER__ &&
