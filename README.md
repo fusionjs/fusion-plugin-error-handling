@@ -63,5 +63,5 @@ __NODE__ && app.register(ErrorHandlerToken, /*some error handler*/);
 
 ##### Required dependencies
 Name | Type | Description
--|-|-|-
-`ErrorHandlerToken` | `(e: Error, captureType: 'browser' | 'uncaught' | 'request') => Promise` | A function that gets called on server errors. If the error is a global uncaught exception or unhandled rejection, the process exits when the returned Promise resolves/rejects.  Server-side only.
+-|-|-
+`ErrorHandlerToken` | `(e: Error, captureType: 'browser' or 'uncaught' or 'request') => Promise` | A function that gets called on server errors. If the error is a global uncaught exception or unhandled rejection, the process exits when the returned Promise resolves/rejects.  Server-side only.
