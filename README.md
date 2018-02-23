@@ -13,7 +13,9 @@ Collects browser errors, server request errors, and uncaught exceptions, and pro
 * [Setup](#setup)
 * [API](#api)
   * [Registration API](#registration-api)
+    * [`ErrorHandling`](#errorhandling)
   * [Dependencies](#dependencies)
+    * [`ErrorHandlingToken`](#errorhandlingtoken)
 
 ---
 
