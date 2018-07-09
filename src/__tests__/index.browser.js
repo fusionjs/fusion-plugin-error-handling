@@ -53,17 +53,20 @@ test('Get exception stack frames', t => {
   t.end();
 });
 
-test('Don\'t break on cross-origin exceptions', t => {
+test("Don't break on cross-origin exceptions", t => {
   t.plan(0);
 
   const app = new App('test', el => el);
 
-  window.opener = new Proxy({}, {
-    get: () => {
-      // Simulate an Exception on all access to `window.opener`
-      throw new Error('Simulated `DOMException`');
+  window.opener = new Proxy(
+    {},
+    {
+      get: () => {
+        // Simulate an Exception on all access to `window.opener`
+        throw new Error('Simulated `DOMException`');
+      },
     }
-  });
+  );
 
   app.register(ErrorHandlingPlugin);
 
