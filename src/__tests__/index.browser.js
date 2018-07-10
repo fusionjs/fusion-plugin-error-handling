@@ -54,7 +54,7 @@ test('Get exception stack frames', t => {
 });
 
 test("Don't break on cross-origin exceptions", t => {
-  t.plan(0);
+  t.plan(1);
 
   const app = new App('test', el => el);
 
@@ -70,7 +70,7 @@ test("Don't break on cross-origin exceptions", t => {
 
   app.register(ErrorHandlingPlugin);
 
-  getSimulator(app);
+  t.doesNotThrow(() => getSimulator(app));
 
   t.end();
 });
