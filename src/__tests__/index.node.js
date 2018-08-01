@@ -79,7 +79,7 @@ test('adds script', async t => {
 
   const ctx = await await getSimulator(app).render('/');
   t.ok(
-    consumeSanitizedHTML(ctx.template.head[0]).match(/<script/),
+    consumeSanitizedHTML(String(ctx.template.head[0])).match(/<script/),
     'adds script to head'
   );
 
